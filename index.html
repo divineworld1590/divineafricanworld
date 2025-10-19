@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divine African World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Divine African World</h1>
+  <nav class="sidebar" id="sidebar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="menu">Menu</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+ <section id="home">
+  <h2>Divine African Cuisine</h2>
+  <p>Welcome to a world of bold flavors, vibrant colors, and soulful traditions. At our table, every meal is more than food — it's a celebration of culture, heritage, and connection.</p>
+  
+  <p>From the spicy jollof rice of West Africa to the savory stews of East Africa, we bring you the best of the continent's diverse culinary treasures. Our ingredients are carefully selected, and our recipes passed down through generations to give you a taste that is truly unforgettable.</p>
+  
+  <p>Whether you're new to African cuisine or returning to the flavors of home, we invite you to explore dishes made with heart, spice, and story. Let every bite transport you to the bustling markets, family kitchens, and warm gatherings across Africa.</p>
+  
+  <p>Ready to start your journey? Scroll down to learn more about our roots, our recipes, and how to get in touch.</p>
+</section>
+
+
+  <section id="menu">
+    <h2>Our Signature Dishes</h2>
+    <div class="grid">
+      <figure>
+      <img src="images/ewa.jpg" alt="Ewa Agoyin">
+      <figcaption>Ewa Agoyin</figcaption>
+    </figure>
+    <figure>
+      <img src="images/eba.jpg" alt="Eba">
+      <figcaption>Eba & Okra soup</figcaption>
+    </figure>
+    <figure>
+      <img src="images/semo.jpg" alt="Semovita">
+      <figcaption>Semovita</figcaption>
+    </figure>
+    <figure>
+      <img src="images/jollof.jpg" alt="Jollof Rice">
+      <figcaption>Jollof Rice</figcaption>
+    </figure>
+    <figure>
+      <img src="images/ofada rice.jpg" alt="Ofada Rice">
+      <figcaption>Ofada Rice</figcaption>
+    </figure>
+    <figure>
+      <img src="images/pounded yam.jpg" alt="Pounded Yam">
+      <figcaption>Pounded Yam</figcaption>
+    </figure>
+    <figure>
+      <img src="images/amala.jpg" alt="Amala">
+      <figcaption>Amala & Gbegiri</figcaption>
+    </figure>
+    <figure>
+      <img src="images/rice and beans.jpg" alt="Rice and Beans">
+      <figcaption>Rice & Beans</figcaption>
+    </figure>
+    <figure>
+      <img src="images/fufu.jpg" alt="Fufu">
+      <figcaption>Fufu & Light Soup</figcaption>
+    </figure>
+    </div>
+  </section>
+  <section id="about">
+  <h2>About Us</h2>
+  <p><strong>Divine African World</strong> was born from a deep passion for sharing the vibrant, diverse, and soulful cuisine of the African continent. We believe food is more than nourishment — it’s a bridge that connects generations, communities, and cultures.</p>
+
+  <p>Our mission is to preserve and promote authentic African culinary traditions by offering dishes that reflect the depth and richness of Africa's regional flavors — from the peppery stews of Nigeria and the injera platters of Ethiopia, to the coastal spices of Senegal and the hearty maize-based meals of Southern Africa.</p>
+
+  <p>At Divine African World every dish is carefully crafted with fresh ingredients, traditional recipes, and time-honored techniques. We are proud to work with local farmers and producers who understand the importance of heritage and sustainability.</p>
+
+  <h3>Our Story</h3>
+  <p>The journey began in a small family kitchen, where recipes were passed down through generations by word of mouth and love. Over time, that passion grew into a dream — to share those home-cooked meals with the world. From food fairs and pop-ups to a permanent home, Flavors of Africa has always stayed true to its roots.</p>
+
+  <h3>What We Stand For</h3>
+  <ul>
+    <li><strong>Authenticity:</strong> We honor traditional cooking methods and indigenous ingredients.</li>
+    <li><strong>Community:</strong> We believe in sharing meals that bring people together.</li>
+    <li><strong>Culture:</strong> Every plate tells a story — one of heritage, resilience, and joy.</li>
+    <li><strong>Hospitality:</strong> We welcome everyone with open arms and warm plates.</li>
+  </ul>
+
+  <h3>Visit Us</h3>
+  <p>Whether you're tasting African cuisine for the first time or seeking the comfort of familiar dishes, we invite you to experience a meal that feels like home — because it comes from the heart.</p>
+</section>
+
+
+<section id="contact">
+<form action="https://formsubmit.co/prepre316@gmail.com" method="POST">
+  <!-- Optional: Prevent spam bots -->
+  <input type="hidden" name="_captcha" value="false">
+  <!-- Optional: Redirect after submission -->
+  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit">Send Message</button>
+  <input type="hidden" name="_next" value="thank-you.html">
+
+  </form>
+  </section>
+
+  <footer>
+  <p>&copy; 2025 Divine African World. All rights reserved.</p>
+  <p>Contact us: <a href="mailto:prepre316@gmail.com">prepre316@gmail.com</a> | <a href="tel:+12366620309">+1 (236) 662 0309</a></p>
+</footer>
+
+  <script src="script.js"></script>
+  
+  <script>
+  let touchStartX = 0;
+  let touchEndX = 0;
+  const sidebar = document.getElementById('sidebar');
+
+  document.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  document.addEventListener('touchend', function(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    if (touchEndX - touchStartX > 100) {
+      // Swiped right – open sidebar
+      sidebar.classList.add('active');
+    } else if (touchStartX - touchEndX > 100) {
+      // Swiped left – close sidebar
+      sidebar.classList.remove('active');
+    }
+  }
+
+  // Close sidebar after clicking any link
+  const links = sidebar.querySelectorAll('a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+  });
+</script>
+
+</body>
+</html>
