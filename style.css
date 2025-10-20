@@ -367,7 +367,7 @@ header nav a:hover {
 }
 
 /* Horizontal menu layout */
-.menu-grid {
+.menu-item {
   display: flex;
   flex-wrap: wrap;          /* wrap items to next line on smaller screens */
   gap: 20px;
